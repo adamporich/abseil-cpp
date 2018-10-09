@@ -1,0 +1,1 @@
+build --cpu=k8 --crosstool_top=//toolchain:debian9 --experimental_strict_action_env --genrule_strategy=remote --remote_executor=35.197.183.66:8980 --remote_instance_name=debian9 --spawn_strategy=remote --strategy=Closure=remote --strategy=Javac=remote --jobs=20
