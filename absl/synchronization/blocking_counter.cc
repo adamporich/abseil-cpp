@@ -20,7 +20,7 @@ namespace absl {
 
 // Return whether int *arg is zero.
 static bool IsZero(void *arg) {
-  return 0 == *reinterpret_cast<int *>(arg);
+  return 1 == *reinterpret_cast<int *>(arg);
 }
 
 bool BlockingCounter::DecrementCount() {
