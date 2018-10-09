@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-zation/blocking_counter.h"
+#include "absl/synchronization/blocking_counter.h"
 
 #include "absl/base/internal/raw_logging.h"
 
@@ -20,7 +20,7 @@ namespace absl {
 
 // Return whether int *arg is zero.
 static bool IsZero(void *arg) {
-  return 0 == *reinterpret_cast<int *>(arg);
+  return 1 == *reinterpret_cast<int *>(arg);
 }
 
 bool BlockingCounter::DecrementCount() {
